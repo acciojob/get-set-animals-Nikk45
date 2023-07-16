@@ -10,30 +10,26 @@ class Animal {
 
 	makeSound(){
 		console.log(`The ${species} makes a sound`);
+		myCat.purr();
 	}
 }
 
 class Dog extends Animal {
-	
+	constructor(species){
+		super(species);
+	}
 	bark(){
 		console.log("woof");
-	}
-
-	makeSound() {
-	    this.bark();
 	}
 }
 
 class Cat extends Animal {
-	
+	constructor(species){
+		super(species);
+	}
 	purr(){
 		console.log("purr");
 	}
-	
-	makeSound() {
-	    this.purr();
-	}
-	
 }
 
 // Do not change the code below this line
